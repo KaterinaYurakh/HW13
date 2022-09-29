@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: beige;
+    margin: 0;
+}
+.container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+ul {
+    list-style: none;
+}
+li{
+    letter-spacing: 2px;
+    position: relative;
+    border: 5px solid red;
+    min-width: 150px;
+    font-size: 16px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+li:hover{
+    font-size: 20px;
+}
+.menu{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.menu2, .menu3{
+    display: none;
+}
+.menu > li{
+    background: black;
+    color: white;
+}
+.menu li:hover .menu2, .menu li:focus .menu2, .menu2 li:hover .menu3, .menu2 li:focus .menu3  {
+    display: block;
+    position: absolute;
+    bottom: -6.25rem;
+
+}
+.menu2 > li{
+    background: rgba(0, 255, 189, 0.45);
+    color: #000000;
+}
+.menu3 > li{
+    background: rgba(255, 73, 135, 0.45);
+    color: #2d6e1f;
+}
